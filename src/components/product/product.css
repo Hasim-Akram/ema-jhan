@@ -1,0 +1,21 @@
+.product {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+
+    margin: 5px 10px auto;
+    padding: 5px;
+
+}
+
+.product .detail {
+    color: blue;
+}
+
+.cartbutton {
+    background-color: gold;
+    color: black;
+    padding: 10px;
+    width: 150px;
+}
