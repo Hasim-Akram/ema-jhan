@@ -1,6 +1,6 @@
 import React from 'react';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro';// <-- import styles to be used
+//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+//import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro';// <-- import styles to be used
 import './product.css';
 
 const Product = (props) => {
@@ -19,10 +19,10 @@ const Product = (props) => {
                 <br />
                 <p>only {props.pd.stock} left in stock order soon</p>
                 <br />
-                {/* <button><FontAwesomeIcon icon={regular('coffee')} />Add to Cart</button> */}
+                <button className='cartbutton' onClick={() => props.handleAddproduct(props.pd)} >Add to Cart</button>
             </div>
 
-        </div>
+        </div >
     );
 };
 

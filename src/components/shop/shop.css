@@ -1,4 +1,15 @@
+.main {
+    display: flex;
+}
+
 .product-container {
 
     width: 70%;
+}
+
+.card-container {
+
+
+    width: 30%;
+
 }
