@@ -1,9 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 //import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 //import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro';// <-- import styles to be used
 import './product.css';
 
 const Product = (props) => {
+
+    //console.log(props.pd.key);
     return (
         <div className='product'>
             <div className='image'>
@@ -11,7 +14,7 @@ const Product = (props) => {
 
             </div>
             <div className='detail'>
-                <h4>{props.pd.name}</h4>
+                <h4><Link to={"/product/" + props.pd.key}>{props.pd.name}</Link></h4>
                 <br />
                 <p>By {props.pd.seller}</p>
                 <br />
